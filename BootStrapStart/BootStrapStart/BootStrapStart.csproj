@@ -89,12 +89,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\js\npm.js" />
     <Content Include="Contents\jquery-3.3.1.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BSTController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -103,6 +112,15 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\BST\Index.cshtml" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Contents\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,8 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Contents\bootstrap-3.3.7-dist\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
