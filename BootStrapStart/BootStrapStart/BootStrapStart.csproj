@@ -98,6 +98,15 @@
     <Content Include="Contents\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
     <Content Include="Contents\bootstrap-3.3.7-dist\js\npm.js" />
     <Content Include="Contents\jquery-3.3.1.min.js" />
+    <Content Include="Contents\layer\layer.js" />
+    <Content Include="Contents\layer\mobile\layer.js" />
+    <Content Include="Contents\layer\mobile\need\layer.css" />
+    <Content Include="Contents\layer\theme\default\icon-ext.png" />
+    <Content Include="Contents\layer\theme\default\icon.png" />
+    <Content Include="Contents\layer\theme\default\layer.css" />
+    <Content Include="Contents\layer\theme\default\loading-0.gif" />
+    <Content Include="Contents\layer\theme\default\loading-1.gif" />
+    <Content Include="Contents\layer\theme\default\loading-2.gif" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
