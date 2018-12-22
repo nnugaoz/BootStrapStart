@@ -11,10 +11,33 @@
     <title>Index</title>
     <link type="text/css" rel="stylesheet" href="~/Contents/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <script type="text/javascript" src="~/Contents/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/Contents/layer/layer.js"></script>
+    <script type="text/javascript">
+        function btnClick(obj) {
+            var lUrl = "";
+            switch ($(obj).prop("id")) {
+                case "btnTabs":
+                    lUrl = "/BST/Tabs";
+                    break;
+                default:
+                    break;
+            }
 
+            layer.open({
+                type: 2,
+                title: 'Tabs',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['893px', '600px'],
+                content: lUrl
+            });
+        }
+    </script>
 </head>
 <body>
     <div>
+        <input type="button" class="button btn-primary" id="btnTabs" value="Tabs" onclick="btnClick(this);" />
     </div>
 </body>
 </html>
