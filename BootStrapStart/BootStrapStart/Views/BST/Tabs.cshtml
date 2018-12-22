@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tabs</title>
+    <link type="text/css" rel="stylesheet" href="~/Contents/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <script type="text/javascript" src="~/Contents/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        function TabPageChange(obj) {
+            switch ($(obj).prop("id")) {
+                case "liTabPage1":
+                    $("#divTabPage1").css("display", "block");
+                    $("#divTabPage2").css("display", "none");
+                    $("#divTabPage3").css("display", "none");
+                    break;
+                case "liTabPage2":
+                    $("#divTabPage1").css("display", "none");
+                    $("#divTabPage2").css("display", "block");
+                    $("#divTabPage3").css("display", "none");
+                    break;
+                case "liTabPage3":
+                    $("#divTabPage1").css("display", "none");
+                    $("#divTabPage2").css("display", "none");
+                    $("#divTabPage3").css("display", "block");
+                    break;
+                default:
+                    $("#divTabPage1").css("display", "none");
+                    $("#divTabPage2").css("display", "none");
+                    $("#divTabPage3").css("display", "none");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="divTabControl">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active" id="liTabPage1" onclick="TabPageChange(this);"><a href="#">TabPage1</a></li>
+            <li role="presentation"><a href="#" id="liTabPage2" onclick="TabPageChange(this);">TabPage2</a></li>
+            <li role="presentation"><a href="#" id="liTabPage3" onclick="TabPageChange(this);">TabPage3</a></li>
+        </ul>
+    </div>
+    <div id="divTabPage1" style="display:none">
+        TabPage1
+    </div>
+    <div id="divTabPage2" style="display:none">
+        TabPage2
+    </div>
+    <div id="divTabPage3" style="display:none">
+        TabPage3
+    </div>
+</body>
+</html>

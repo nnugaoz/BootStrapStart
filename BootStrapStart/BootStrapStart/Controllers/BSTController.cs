@@ -13,5 +13,10 @@ namespace BootStrapStart.Controllers
         {
             return View();
         }
+
+        public ActionResult Tabs()
+        {
+            return View();
+        }
     }
 }
